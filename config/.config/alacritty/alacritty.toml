@@ -1,0 +1,34 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/solarized_osaka.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 11.0
+
+[font.bold]
+# family = "RobotoMono Nerd Font Mono"
+# family = "CaskaydiaCove Nerd Font"
+family = "ComicShanns Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+# family = "CaskaydiaCove Nerd Font"
+# family = "RobotoMono Nerd Font Mono"
+family = "ComicShanns Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+# family = "CaskaydiaCove Nerd Font"
+# family = "RobotoMono Nerd Font Mono"
+family = "ComicShanns Nerd Font"
+style = "Italic"
+
+[font.normal]
+# family = "RobotoMono Nerd Font Mono"
+# family = "CaskaydiaCove Nerd Font"
+family = "ComicShanns Nerd Font"
+style = "Regular"
