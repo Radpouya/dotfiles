@@ -1,5 +1,4 @@
 -- return {
---
 --   -- copilot cmp source
 --   {
 --     "nvim-cmp",
@@ -18,5 +17,4 @@
 --       opts.sorting = opts.sorting or require("cmp.config.default")().sorting
 --     end,
 --   },
---
 -- }

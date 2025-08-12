@@ -6,29 +6,36 @@ import = [
 [env]
 TERM = "xterm-256color"
 
+[window]
+opacity = 0.5
+blur = true
+decorations = "ButtonLess"
+padding = { x = 2, y = 4 }
+dimensions = { columns = 120, lines = 30 }
+
 [font]
 size = 11.0
 
 [font.bold]
 # family = "RobotoMono Nerd Font Mono"
 # family = "CaskaydiaCove Nerd Font"
-family = "ComicShanns Nerd Font"
+family = "ComicShannsMono Nerd Font"
 style = "Bold"
 
 [font.bold_italic]
 # family = "CaskaydiaCove Nerd Font"
 # family = "RobotoMono Nerd Font Mono"
-family = "ComicShanns Nerd Font"
+family = "ComicShannsMono Nerd Font"
 style = "Bold Italic"
 
 [font.italic]
 # family = "CaskaydiaCove Nerd Font"
 # family = "RobotoMono Nerd Font Mono"
-family = "ComicShanns Nerd Font"
+family = "ComicShannsMono Nerd Font"
 style = "Italic"
 
 [font.normal]
 # family = "RobotoMono Nerd Font Mono"
 # family = "CaskaydiaCove Nerd Font"
-family = "ComicShanns Nerd Font"
+family = "ComicShannsMono Nerd Font"
 style = "Regular"

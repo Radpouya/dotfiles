@@ -46,55 +46,54 @@ return {
   },
 
   -- copilot
-  {
-    "zbirenbaum/copilot.lua",
-    opts = {
-      suggestion = {
-        auto_trigger = true,
-        keymap = {
-          accept = "<C-l>",
-          accept_word = "<M-l>",
-          accept_line = "<M-S-l>",
-          next = "<M-]>",
-          prev = "<M-[>",
-          dismiss = "<C-]>",
-        },
-      },
-      filetypes = {
-        markdown = true,
-        help = true,
-      },
-    },
-  },
+  -- {
+  --   "zbirenbaum/copilot.lua",
+  --   opts = {
+  --     suggestion = {
+  --       auto_trigger = true,
+  --       keymap = {
+  --         accept = "<C-l>",
+  --         accept_word = "<M-l>",
+  --         accept_line = "<M-S-l>",
+  --         next = "<M-]>",
+  --         prev = "<M-[>",
+  --         dismiss = "<C-]>",
+  --       },
+  --     },
+  --     filetypes = {
+  --       markdown = true,
+  --       help = true,
+  --     },
+  --   },
+  -- },
 
   -- JADI
   -- extend auto completion
-  -- {
-  --   "hrsh7th/nvim-cmp",
-  --   ---@param opts cmp.ConfigSchema
-  --   opts = function(_, opts)
-  --     local cmp = require("cmp")
-  --     opts.mapping = vim.tbl_deep_extend("force", opts.mapping, {
-  --       ["<C-h>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
-  --       ["<C-l>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert })
-  --     })
-  --   end,
-  -- },
-  --
-  -- -- scopes
+  {
+    "hrsh7th/nvim-cmp",
+    ---@param opts cmp.ConfigSchema
+    opts = function(_, opts)
+      local cmp = require("cmp")
+      opts.mapping = vim.tbl_deep_extend("force", opts.mapping, {
+        ["<C-h>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
+        ["<C-l>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
+      })
+    end,
+  },
+
+  -- scopes
   -- {
   --   "tiagovla/scope.nvim",
   --   event = "VeryLazy",
   --   opts = {},
   -- },
-  --
-  -- -- tidy
+
+  -- tidy
   -- {
   --   "mcauley-penney/tidy.nvim",
   --   event = "VeryLazy",
   --   opts = {
   --     filetype_exclude = { "markdown", "diff" },
-  --   }
+  --   },
   -- },
-  --
 }
